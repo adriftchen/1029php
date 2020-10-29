@@ -46,7 +46,7 @@ echo str_repeat('*',20);
 $str_replace='BIG MONEY';
 
 $result=str_replace('Lorem',$str_replace,$str);
-// $result=str_replace('ipsum',$str_replace,$str);
+// to replace "Lorem" with "$str_replace" in "$str";
 //原目標大小寫要一致
 
 echo $str;
@@ -77,16 +77,16 @@ echo strpos($str,$target);
 <h1>字串長度</h1>
 <h3>strpos()</h3>
 <?php
-$mb_str='Hiii今天天氣不錯*-*';
+$mb_str='Hii.今天天氣不錯*-*';
 
 echo strlen($mb_str); /* 中文算3個字元 */
 echo "<br>";
-echo mb_strlen($mb_str);
+echo mb_strlen($mb_str); /* 中文只算1個字元 */
 echo "<br>";
 
 echo substr($mb_str,0,6); /* ˊ中文變亂碼 */
 echo "<br>";
-echo mb_substr($mb_str,0,6); /* 亂碼 */
+echo mb_substr($mb_str,0,6); /* 正常 */
 
 ?>
 

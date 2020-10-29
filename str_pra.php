@@ -1,5 +1,31 @@
 <h1>將”aaddw1123”改成”*********”</h1>
-<h3>sol1</h3>
+
+<?php
+echo str_repeat("*",mb_strlen('aaddw1123'));
+?>
+
+<br>
+
+<?php
+$str='aaddw1123';
+$str_replace='*';
+$result=str_replace('aaddw1123','*',$str);
+echo $result;
+//直接用str_replace()會把整段文字取代掉成一個*
+?>
+
+<br>
+
+<?php
+$str="         ";
+$str_replace='*';
+$result=str_replace(' ',$str_replace,$str);
+echo $result;
+//輸入密碼
+?>
+
+<br>
+
 <?php
 $str="aaddw1123";
 $str_replace='*';
@@ -37,18 +63,16 @@ $str_replace='*';
 $result=str_replace('3',$str_replace,$str);
 echo"<br>";
 echo $result;
+?>
 
-?>
-<h3>sol2</h3>
-<?php
-echo str_repeat("*",mb_strlen('aaddw1123'));
-?>
+<br>
 
 <h1>將”this,is,a,book”依”,”切割後成為陣列</h1>
 <?php
 print_r(explode(',','this,is,a,book'));
 ?>
-</pre>
+
+<br>
 
 <h1>將上例陣列重新組合成“this is a book”</h1>
 <?php

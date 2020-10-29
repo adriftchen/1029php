@@ -18,9 +18,8 @@
     border:1px solid #ccc;
     padding: 10px 0;
   }
-  table,
   td:hover{
-    backbround:lightblue;
+    background:lightblue;
   }
 
   </style>
